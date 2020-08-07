@@ -1,0 +1,169 @@
+body{
+    background-color: rgb(233, 225, 225);
+}
+
+#container{
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 25px;
+    border: 2px solid black;
+}
+
+/*header*/
+
+#header{
+    background-image:url('header-image.jpg');
+    width: 100%;
+    height: 150px;
+    border-radius: 24px 24px 0px 0px;
+    position: relative;
+}
+
+#reset{
+    color: white;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 1.3em; 
+}
+
+#reset .reset-text{
+    visibility: hidden;
+    transition-delay: 0.8s;
+    position: absolute;
+    z-index: 1;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+    top: -5px;
+    right: 150%;
+    padding: 5px 0;
+}
+
+#reset:hover .reset-text{
+    visibility: visible;
+}
+
+.fa-sync-alt:hover{
+    cursor: pointer;
+    transform: rotate(360deg);
+    transition: all 0.8s ease-in-out 0s; 
+}
+
+#date{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+/*content*/
+
+#content{
+    background-color: black;
+    height: 450px;
+    position: relative;
+    border-radius: 0px 0px 24px 24px;
+}
+
+/* list */
+
+#list{
+    background-color: white;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    overflow-y: auto;
+}
+
+.all-items{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.item{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.288);
+    width: 90%;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+   /*  justify-content: space-between; */
+}
+
+.fa-circle, .fa-check-circle{
+    font-size: 25px;
+}
+
+.fa-circle:hover{
+    cursor: pointer;
+}
+
+.fa-trash-alt{
+    font-size: 25px;
+    margin-left: auto;
+}
+
+.fa-trash-alt:hover{
+   cursor: pointer;
+   transform: rotate(30deg);
+}
+
+/* add item */
+
+#add-item{
+    width: 100%;
+    background-color: rgb(26, 153, 111);
+    height: 20%;
+    border-radius: 0px 0px 24px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.fa-plus-circle{
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.fa-plus-circle:hover{
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2); /* IE 9 */
+    -webkit-transform: scale(1.2, 1.2);
+}
+
+.add-to-list{
+    margin-left: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.paragraph{
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 10px;
+    font-style: normal;
+}
+
+.paragraph::first-letter{
+    text-transform: uppercase;
+}
+
+.lineThrough{
+    text-decoration: line-through;
+}
+
